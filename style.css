@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main {
+    margin-top: 4rem;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 40px 2px rgba(0, 0, 0, 0.4);
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s;
+
+}
+
+main section h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+main section span {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+main #img-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #img-principal img {
+    width: 80%;
+    height: 18rem;
+    border-radius: 6pt;
+    display: block;
+    margin: 2rem auto 0px auto;
+}
+
+main #img-principal:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+main #img-principal svg {
+    display: none;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 9999;
+}
+
+main #img-principal:hover svg {
+    display: flex;
+}
+
+main .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1rem;
+    padding-left: 0px;
+}
+
+main .details .topic1 {
+    display: flex;
+    align-items: center;
+}
+
+main .details .number {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+main .details .topic1 img {
+    width: 10px;
+    margin-right: 0.5rem;
+}
+
+main .details .topic2 img {
+    width: 20px;
+    margin-right: 0.3rem;
+}
+
+main .details .topic2 {
+    display: flex;
+    align-items: center;
+}
+
+section .creator {
+    border-top: 1px solid hsl(215, 51%, 70%);
+    ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section .creator img {
+    width: 2rem;
+    margin: 0px 1rem 0px 0px;
+}
+
+section .creator .text-name {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+section .text-name {
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s;
+
+}
+
+section .text-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:375px) {
+    main {
+        transform: scale(0.2px);
+
+    }
+}
